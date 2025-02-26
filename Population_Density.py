@@ -12,6 +12,7 @@ from Settings import STYLES
 from Utils import GeoCodingError, get_aoi
 import json
 import os
+import io
 
 #######################
 
