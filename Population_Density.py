@@ -14,21 +14,6 @@ import json
 import os
 
 #######################
-# Load the service account key from Streamlit secrets
-ee_service_account_key = json.loads(st.secrets["EE_SERVICE_ACCOUNT_KEY"])
-
-# Save the key to a temporary JSON file
-key_path = "earthengine-key.json"
-with open(key_path, "w") as f:
-    json.dump(ee_service_account_key, f)
-
-# Authenticate using the service account key
-credentials = ee.ServiceAccountCredentials(
-    ee_service_account_key["client_email"], key_path
-)
-
-# Initialize Earth Engine
-ee.Initialize(credentials)
 
 #######################
 # Page Configuration
@@ -100,6 +85,22 @@ with st.spinner("Creating map... (may take up to a minute)"):
 
 #######################
 # Map Configuration
+
+# Load the service account key from Streamlit secrets
+ee_service_account_key = json.loads(st.secrets["EE_SERVICE_ACCOUNT_KEY"])
+
+# Save the key to a temporary JSON file
+key_path = "earthengine-key.json"
+with open(key_path, "w") as f:
+    json.dump(ee_service_account_key, f)
+
+# Authenticate using the service account key
+credentials = ee.ServiceAccountCredentials(
+    ee_service_account_key["client_email"], key_path
+)
+
+# Initialize Earth Engine
+ee.Initialize(credentials)
 
 # Convert Shapely aoi object to ee geometry
 points = ee.Geometry.MultiPoint(list(aoi.exterior.coords)) 
