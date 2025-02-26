@@ -33,7 +33,7 @@ with st.sidebar:
     address = st.text_input(
         "Location",
         key="address",
-        value = "Nantucket"
+        value = "Topeka"
     )
 
     # Select year for population density
