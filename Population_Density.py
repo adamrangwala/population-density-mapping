@@ -56,8 +56,8 @@ with st.sidebar:
 
     max = st.slider("Select maximum density [population per pixel]",
             min_value=0.0,
-            max_value=200.0,
-            value=100.0,
+            max_value=400.0,
+            value=150.0,
             step=.5
             )
     
