@@ -15,7 +15,7 @@ import os
 
 #######################
 # Load the service account key from Streamlit secrets
-ee_service_account_key = json.loads(st.secrets["general"]["EE_SERVICE_ACCOUNT_KEY"])
+ee_service_account_key = json.loads(st.secrets["EE_SERVICE_ACCOUNT_KEY"])
 
 # Save the key to a temporary JSON file
 key_path = "earthengine-key.json"
