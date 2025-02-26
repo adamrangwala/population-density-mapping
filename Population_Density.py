@@ -33,7 +33,7 @@ with st.sidebar:
     address = st.text_input(
         "Location",
         key="address",
-        value = "Topeka"
+        value = "Philadelphia"
     )
 
     # Select year for population density
@@ -57,7 +57,8 @@ with st.sidebar:
     max = st.slider("Select maximum density [population per pixel]",
             min_value=0.0,
             max_value=400.0,
-            value=2.0,
+            value=100.0,
+            index=3,
             step=.5
             )
     
