@@ -2,12 +2,33 @@
 # Import libraries
 import geemap.foliumap as geemap
 import ee   #mapping
+from ee import oauth
+from google.oauth2 import service_account
 import streamlit as st
 import datetime
 from dateutil.relativedelta import relativedelta
 import Settings
 from Settings import STYLES
 from Utils import GeoCodingError, get_aoi
+import json
+import os
+
+#######################
+# Load the service account key from Streamlit secrets
+ee_service_account_key = json.loads(st.secrets["general"]["EE_SERVICE_ACCOUNT_KEY"])
+
+# Save the key to a temporary JSON file
+key_path = "earthengine-key.json"
+with open(key_path, "w") as f:
+    json.dump(ee_service_account_key, f)
+
+# Authenticate using the service account key
+credentials = ee.ServiceAccountCredentials(
+    ee_service_account_key["client_email"], key_path
+)
+
+# Initialize Earth Engine
+ee.Initialize(credentials)
 
 #######################
 # Page Configuration
