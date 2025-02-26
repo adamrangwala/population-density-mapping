@@ -1,3 +1,4 @@
+setuptools
 earthengine_api==1.5.3
 ee==0.2
 geemap==0.35.1
