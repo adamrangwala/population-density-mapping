@@ -1,6 +1,7 @@
+setuptools
 earthengine_api==1.5.3
-ee==0.2
-geemap==0.35.1
+ee
+geemap
 geopandas==1.0.1
 osmnx==2.0.1
 pandas==2.2.3
