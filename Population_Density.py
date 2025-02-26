@@ -48,6 +48,7 @@ with st.sidebar:
     # Select map color theme
     style = st.selectbox(
         "Map Color Theme",
+        index=3,
         options=list(STYLES.keys()),    
         key="style",
     )
@@ -58,7 +59,6 @@ with st.sidebar:
             min_value=0.0,
             max_value=400.0,
             value=100.0,
-            index=3,
             step=.5
             )
     
