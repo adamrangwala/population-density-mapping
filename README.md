@@ -2,11 +2,10 @@
 
 ---
 <h3 align="center">
-    🎈 Try it out here: <a href="[https://prettymapp.streamlit.app](https://population-density-mapping.streamlit.app/)/">prettymapp on streamlit 🎈 </a>
+    🎈 Try it out here: <a href="[https://population-density-mapping.streamlit.app](https://population-density-mapping.streamlit.app/)/"> on streamlit 🎈 </a>
 </h3>
 
----
-    <a href="[https://prettymapp.streamlit.app/]()"><img src="demo.gif" width=700></a>
+---    
 
 
 
