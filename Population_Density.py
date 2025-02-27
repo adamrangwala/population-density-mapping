@@ -59,7 +59,8 @@ with st.sidebar:
             min_value=0.0,
             max_value=400.0,
             value=100.0,
-            step=.5
+            step=.5,
+            help="To see better gradients for sparsely populated location, set the maximum density lower and vice versa for densely populated locations like Singapore"
             )
     
     legend = st.toggle("Legend Visibility", value=True)
