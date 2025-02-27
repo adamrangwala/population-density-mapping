@@ -2,7 +2,7 @@
 
 ---
 <h3 align="center">
-    🎈 Try it out <a href="[https://population-density-mapping.streamlit.app](https://population-density-mapping.streamlit.app/)/"> on streamlit 🎈 </a>
+    🎈 Try it out <a href="[https://population-density-mapping.streamlit.app](https://population-density-mapping.streamlit.app/)/"> on Streamlit 🎈 </a>
 </h3>
 
 ---    
