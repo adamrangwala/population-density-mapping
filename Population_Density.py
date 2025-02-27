@@ -55,7 +55,7 @@ with st.sidebar:
 
     st.write("")
 
-    max = st.slider("Select maximum density [population per pixel]",
+    max = st.slider("Select maximum density [population per hectare]",
             min_value=0.0,
             max_value=400.0,
             value=100.0,
