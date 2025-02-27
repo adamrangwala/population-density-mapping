@@ -134,7 +134,9 @@ if legend:
     }
     # Add legend to the map
     m.add_legend(title="Population Density", legend_dict=legend_dict)
-    m.to_streamlit(height=500)
+
+# Create Map
+m.to_streamlit(height=500)
 
 #######################
 # Map Description
