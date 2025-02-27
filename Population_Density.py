@@ -15,8 +15,6 @@ import os
 import io
 
 #######################
-
-#######################
 # Page Configuration
 st.set_page_config(
     page_title="Make You own Heatmaps",   
@@ -87,7 +85,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
         st.stop()
 
 #######################
-# Map Configuration
+# Google Earth Engine Authentication
 
 # Load the service account key from Streamlit secrets
 ee_service_account_key = json.loads(st.secrets["EE_SERVICE_ACCOUNT_KEY"])
@@ -104,6 +102,9 @@ credentials = ee.ServiceAccountCredentials(
 
 # Initialize Earth Engine
 ee.Initialize(credentials)
+
+#######################
+# Map Configuration
 
 # Convert Shapely aoi object to ee geometry
 points = ee.Geometry.MultiPoint(list(aoi.exterior.coords)) 
