@@ -10,7 +10,7 @@
 
 
 <p align="center">
-    <a href="https://prettymapp.streamlit.app/"><img src="./streamlit-prettymapp/example_prints/demo.gif" width=700></a>
+    <a href="https://prettymapp.streamlit.app/"><img src="demo.gif" width=700></a>
 </p>
 
 <br>
