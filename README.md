@@ -6,11 +6,12 @@
 </h3>
 
 ---
+    <a href="[https://prettymapp.streamlit.app/]()"><img src="demo.gif" width=700></a>
 
 
 
 <p align="center">
-    <a href="https://prettymapp.streamlit.app/"><img src="demo.gif" width=700></a>
+    <a href="(https://population-density-mapping.streamlit.app/)"><img src="demo.gif" width=700></a>
 </p>
 
 <br>
