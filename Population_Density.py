@@ -72,7 +72,7 @@ st.markdown("# Make a Population Density Map")
 st.markdown("""
 
 The maps created with this application use the [WorldPop dataset](https://www.worldpop.org/).
-Specifically, estimates of population are calculated for each pixel: where 1 pixel represents a real world area of 100x100m.
+Specifically, estimates of population are calculated for each pixel: where 1 pixel represents a real world area of a hectare (100mx100m).
 """, unsafe_allow_html=True)
 
 #######################
