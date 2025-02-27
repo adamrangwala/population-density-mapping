@@ -28,7 +28,7 @@ st.set_page_config(
 #######################
 # Sidebar
 with st.sidebar:
-    st.title(':gear: Configuration')
+    st.title('Configuration :gear:')
 
     address = st.text_input(
         "Location",
