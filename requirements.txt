@@ -1,6 +1,7 @@
 setuptools
 earthengine_api
 earthengine-api
+folium
 ee
 geemap
 geopandas
