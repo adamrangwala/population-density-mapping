@@ -1,4 +1,4 @@
-**Population Density Mapping is a Streamlit webapp and Python package to create beautiful maps from OpenStreetMap data**
+**Population Density Mapping is a Streamlit webapp and Python package to create beautiful population density maps from the WorldPop dataset.**
 
 ---
 <h3 align="center">
