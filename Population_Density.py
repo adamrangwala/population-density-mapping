@@ -1,5 +1,8 @@
 #######################
 # Import libraries
+import os
+import io
+from io import StringIO
 import geemap.foliumap as geemap
 import ee   #mapping
 from ee import oauth
@@ -11,9 +14,7 @@ import Settings
 from Settings import STYLES
 from Utils import GeoCodingError, get_aoi
 import json
-import os
-import io
-from io import StringIO
+
 
 
 #######################
