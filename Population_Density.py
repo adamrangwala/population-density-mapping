@@ -1,12 +1,8 @@
 #######################
 # Import libraries
-import os
 import io
 from io import StringIO
 import os
-import io
-from io import StringIO
-os.system("pip install --upgrade geemap earthengine-api folium")
 import geemap.foliumap as geemap
 import ee   #mapping
 from ee import oauth
