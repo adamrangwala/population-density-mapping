@@ -1,11 +1,8 @@
 #######################
 # Import libraries
-import io
-from io import StringIO
 import os
 import geemap.foliumap as geemap
 import ee   #mapping
-from ee import oauth
 from google.oauth2 import service_account
 import streamlit as st
 import datetime
@@ -129,18 +126,22 @@ m = geemap.Map()
 m.addLayer(population, {"min":0, "max": max, "palette": STYLES[style]}, "Population Heat Map")
 m.centerObject(buffered_aoi_ee)
 
-# Define a legend dictionary
-if legend:
-    legend_dict = {
-    "Low Population": STYLES[style][0],
-    "Medium Population": STYLES[style][int(len(STYLES[style])/2)],
-    "High Population": STYLES[style][-1],
-    }
-    # Add legend to the map
-    m.add_legend(title="Population Density", legend_dict=legend_dict)
-
 # Create Map
 m.to_streamlit(height=500)
+
+# Custom Legend
+if legend:
+    legend_dict = {
+        "Low Population": STYLES[style][0],
+        "Medium Population": STYLES[style][int(len(STYLES[style]) / 2)],
+        "High Population": STYLES[style][-1],
+    }
+    st.markdown("#### Population Density")
+    for label, color in legend_dict.items():
+        st.markdown(
+            f"<div style='display: flex; align-items: center; margin-bottom: 5px;'><div style='width: 20px; height: 20px; background-color: #{color}; margin-right: 10px; border: 1px solid black;'></div><span>{label}</span></div>",
+            unsafe_allow_html=True,
+        )
 
 #######################
 # Map Description
