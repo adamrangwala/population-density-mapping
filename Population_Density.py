@@ -18,7 +18,7 @@ import json
 # Page Configuration
 st.set_page_config(
     page_title="Make You own Heatmaps",   
-    layout="centered", 
+    layout="wide", 
     page_icon="https://user-images.githubusercontent.com/351125/62718454-384c9f00-b9dc-11e9-8f1d-377fea19b6dd.png", 
     initial_sidebar_state="expanded",
 )
