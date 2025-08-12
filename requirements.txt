@@ -1,7 +1,6 @@
 setuptools
 earthengine-api
 folium
-ee
 geemap
 geopandas
 osmnx
@@ -10,4 +9,3 @@ protobuf
 python_dateutil
 Shapely
 streamlit
-streamlit_nightly
