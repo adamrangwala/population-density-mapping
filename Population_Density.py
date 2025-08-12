@@ -127,7 +127,7 @@ m.addLayer(population, {"min":0, "max": max, "palette": STYLES[style]}, "Populat
 m.centerObject(buffered_aoi_ee)
 
 # Create Map
-m.to_streamlit(height=500)
+m.to_streamlit(width=1000, height=700)
 
 # Custom Legend
 if legend:
